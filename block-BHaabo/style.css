@@ -109,7 +109,7 @@ body {
 .sidebar {
     background-color: #a3caea;
     padding: 32px;
-    flex: 0 1 30%;
+    flex:0 1 30%;
     align-self: stretch;
     border-radius: 6px;
     display: flex;
@@ -136,6 +136,7 @@ body {
 .sidebar-nav .active {
     border: 2px solid #ff7b29;
     color: #ff7b29;
+    border-radius: 5px;
 }
 .logout-btn {
     border: 0;
@@ -150,6 +151,9 @@ body {
 }
 .logout-btn img {
     margin-right: 12px;
+    vertical-align: middle;
+}
+.logout-btn span {
     vertical-align: middle;
 }
 
