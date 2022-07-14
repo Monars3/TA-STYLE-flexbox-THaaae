@@ -1,0 +1,156 @@
+<!-- 
+- Create a page using flexbox according to the layout shown below.
+
+![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-3.png)
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Assignment level 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container flex">
+            <h1>Prism</h1>
+            <nav class="nav">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">GENERIC</a>
+                <a href="#">ELEMENTS</a>
+            </nav>
+        </div>
+        <div class="sub-heading container flex">
+            <h1>
+                Welcome to Prism, a free responsive site 
+                template by TEMPLATED
+            </h1>
+            <div class="vl"></div>
+            <div class="col-1">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
+                    elit. Soluta vitae aliquid facere reprehenderit, 
+                    ipsa odio unde incidunt delectus.
+                </p>
+                <button class="btn">GET STARTED</button>
+            </div>
+        </div>
+    </header>
+    <section class="sub-heading container flex">
+        <div class="col-2">
+            <h2>Magna feugiat adipiscing </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sint 
+               obcaecati dolor ut sequi id modi quo deleniti voluptates distinctio 
+               magni, quia iure labore repellat molestias, tenetur nihil! Consectetur, 
+               voluptas sed nihil beatae doloribus reiciendis at vero sit voluptatibus 
+               quas nostrum dicta?
+            </p>
+            <button class="btn learn">LEARN MORE</button>
+        </div>
+        <div class="vl one"></div>
+        <div class="col-left">
+            <p> <span>&#x2713;</span> Ipsum nisl sed cursus magna</p>
+            <p> <span>&#x2713;</span> Amet veroeros sed aliquam consequat</p>
+            <p> <span>&#x2713;</span> Tempus lorem adipiscing et lorem</p>
+            <p> <span>&#x2713;</span> Morbi pharetra vitae felis placerat</p>
+            <p> <span>&#x2713;</span> Pharetra nulla risus orci dapibus</p>
+        </div>
+    </section><hr>
+    <section class="three-images">
+        <main class=" sub-heading container">
+            <article class="box flex">
+                <nav class="images">
+                    <img src="/block-BHaabp/assets/pic01.jpg" alt="image">
+                </nav>
+                <div class="col-3">
+                    <h3>Ipsum pharetra tempus</h3>
+                    <p>Lorem ipsum nisi sed cursus magna et amet veroeros. Sed phasellus
+                       malesuada quis orci. Pellentesque eget consequat.
+                    </p>
+                    <button class="btn learn details">DETAILS</button>
+                </div>
+            </article>
+            <article class="box flex center">
+                <nav class="images">
+                    <img src="/block-BHaabp/assets/pic02.jpg" alt="image">
+                </nav>
+                <div class="col-3">
+                    <h3>Ipsum pharetra tempus</h3>
+                    <p>Lorem ipsum nisi sed cursus magna et amet veroeros. Sed phasellus
+                        malesuada quis orci. Pellentesque eget consequat.
+                    </p>
+                    <button class="btn learn details">DETAILS</button>
+                </div>
+            </article><article class="box flex">
+                <nav class="images">
+                    <img src="/block-BHaabp/assets/pic03.jpg" alt="image">
+                </nav>
+                <div class="col-3">
+                    <h3>Ipsum pharetra tempus</h3>
+                    <p>Lorem ipsum nisi sed cursus magna et amet veroeros. Sed phasellus
+                        malesuada quis orci. Pellentesque eget consequat.
+                    </p>
+                    <button class="btn learn details">DETAILS</button>
+                </div>
+            </article> 
+                <button class="butn ipsum" >IPSUM MAGNA TEMPUS</button>
+        </main>
+    </section>
+    <section class="container flex sub-heading">
+        <div class="name-email">
+            <h4>Orci malesuada</h4>
+            <p>Morbi pharetra vitae felis placerat pharetra. nulla
+            risus orci, dapibus id malesuada et nec, malesuada quis
+            Pellentesque eget.
+            </p>
+            <form action="">
+                <div class="flex">
+                    <input type="text" class="name" placeholder="Name">
+                    <input type="text" class="email" placeholder="Email">
+                </div>
+                
+            <!-- </form> -->
+            <!-- <form action="/url" method="GET"> -->
+                <div>
+                    <textarea class="message" name="" rows="6" placeholder="Message"></textarea>
+                </div>
+            </form>
+            <button class="btn learn">SEND MESSAGE</button>
+        </div>
+        <div class="vl last-one"></div>
+        <div class="social-media">
+            <nav class="nav-logo ">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <p>twitter.com/unlimited-tld</p>
+            </nav>
+            <nav class="nav-logo ">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <p>facebook.com/unlimited-tld</p>
+            </nav>
+            <nav class="nav-logo">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <p>instagram.com/unlimited-tld</p>
+            </nav>
+            <nav class="nav-logo">
+                <ion-icon name="mail-outline"></ion-icon>
+                <p>information@unlimited-tld</p>
+            </nav>
+            <nav class="nav-logo home">
+                <ion-icon name="home-outline"></ion-icon>
+                <p>1234 Somewhere Road Suite 9823 Nashville <br>TN 00000-0000</p>
+            </nav>
+            <!-- <p class="last"></p> -->
+        </div>
+    </section>
+    <footer>
+        <p class="footer">&copy; Untitled. All rights reserved. images: Unsplash. Design: TEMPLATED</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
